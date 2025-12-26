@@ -17,7 +17,7 @@ jobs:
     - name: Install uv
       run: pip install uv
     - name: Install dependencies with uv
-      run: uv pip install --system --no-cache-dir --all
+      run: uv pip install --system --no-cache-dir --group default
     - name: Ensure browsers are installed
       run: python -m playwright install --with-deps
     - name: Run your tests
