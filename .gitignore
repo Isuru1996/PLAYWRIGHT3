@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+.env/
+
+# Playwright test results and traces
+test-results/
+playwright-report/
+trace.zip
+
+# VSCode settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# uv lock file (optional, if you want to ignore it)
+# uv.lock

@@ -1,0 +1,11 @@
+$ uv run pytest
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 2 items
+
+test/test_example.py ..                                                  [100%]
+
+============================== 2 passed in 3.79s ===============================

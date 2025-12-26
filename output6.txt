@@ -1,0 +1,2 @@
+Start debugging
+(playwright3) isuru@isuru-HP-EliteBook-840-G5:~/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3$ PWDEBUG=1 pytest -s -k test_get_started_link

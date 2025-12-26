@@ -1,0 +1,29 @@
+
+$ uv run pytest --numprocesses 2
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2, xdist-3.8.0
+created: 2/2 workers
+2 workers [6 items]
+
+......                                                                   [100%]
+============================== 6 passed in 6.92s ===============================
+$ uv run pytest --numprocesses 2 --headed
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2, xdist-3.8.0
+created: 2/2 workers
+2 workers [6 items]
+
+......                                                                   [100%]
+============================== 6 passed in 5.33s ===============================
+$ uv run PWDEBUG=1 pytest -s test_example.py --headed
+error: Failed to spawn: `PWDEBUG=1`
+  Caused by: No such file or directory (os error 2)
+$ uv run PWDEBUG=1 pytest -s -k test_example.py --headed
+error: Failed to spawn: `PWDEBUG=1`
+  Caused by: No such file or directory (os error 2)

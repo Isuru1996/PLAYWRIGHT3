@@ -1,0 +1,11 @@
+[project]
+name = "playwright3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "playwright>=1.57.0",
+    "pytest-playwright>=0.7.2",
+    "pytest-xdist>=3.8.0",
+]

@@ -1,0 +1,4 @@
+ -- Update playwright --
+$ uv add pytest-playwright playwright -U
+Resolved 20 packages in 1.04s
+Audited 18 packages in 0.30ms

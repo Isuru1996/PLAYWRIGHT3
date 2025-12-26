@@ -1,0 +1,15 @@
+$ uv run pytest --tracing on --headed
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2, xdist-3.8.0
+collected 6 items
+
+test/test_codegen.py .                                                   [ 16%]
+test/test_example.py ..                                                  [ 50%]
+test/test_fixtures.py .                                                  [ 66%]
+test/test_isolation.py ..                                                [100%]
+
+============================== 6 passed in 8.88s ===============================
+$ uv run playwright show-trace ./test-results/test-test-codegen-py-test-example-chromium/trace.zip

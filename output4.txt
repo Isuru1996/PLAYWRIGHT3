@@ -1,0 +1,90 @@
+$ uv run pytest --headed
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 6 items
+
+test/test_codegen.py .                                                   [ 16%]
+test/test_example.py ..                                                  [ 50%]
+test/test_fixtures.py .                                                  [ 66%]
+test/test_isolation.py ..                                                [100%]
+
+============================== 6 passed in 6.91s ===============================
+$ uv run pytest --browser webkit --headed
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 6 items
+
+test/test_codegen.py .                                                   [ 16%]
+test/test_example.py ..                                                  [ 50%]
+test/test_fixtures.py .                                                  [ 66%]
+test/test_isolation.py ..                                                [100%]
+
+============================== 6 passed in 10.42s ==============================
+$ uv run pytest --browser webkit --headed
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 6 items
+
+test/test_codegen.py .                                                   [ 16%]
+test/test_example.py ..                                                  [ 50%]
+test/test_fixtures.py .                                                  [ 66%]
+test/test_isolation.py ..                                                [100%]
+
+============================== 6 passed in 13.61s ==============================
+$ uv run pytest --browser webkit --browser firefox
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 12 items
+
+test/test_codegen.py .                                                   [  8%]
+test/test_example.py ..                                                  [ 25%]
+test/test_fixtures.py .                                                  [ 33%]
+test/test_isolation.py ..                                                [ 50%]
+test/test_codegen.py .                                                   [ 58%]
+test/test_example.py ..                                                  [ 75%]
+test/test_fixtures.py .                                                  [ 83%]
+test/test_isolation.py ..                                                [100%]
+
+============================= 12 passed in 22.70s ==============================
+$ uv run pytest --browser webkit --browser firefox --headed
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 12 items
+
+test/test_codegen.py .                                                   [  8%]
+test/test_example.py ..                                                  [ 25%]
+test/test_fixtures.py .                                                  [ 33%]
+test/test_isolation.py ..                                                [ 50%]
+test/test_codegen.py .                                                   [ 58%]
+test/test_example.py ..                                                  [ 75%]
+test/test_fixtures.py .                                                  [ 83%]
+test/test_isolation.py ..                                                [100%]
+
+============================= 12 passed in 32.04s ==============================
+$ uv run pytest  -k test_main_navigation --headed
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /home/isuru/Desktop/Isuru/prodoscore/Testing/PlayWright/playwright3
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.7.2
+collected 6 items / 5 deselected / 1 selected
+
+test/test_fixtures.py .                                                  [100%]
+
+======================= 1 passed, 5 deselected in 5.66s ========================
+
