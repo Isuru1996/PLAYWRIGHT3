@@ -16,8 +16,10 @@ jobs:
         python-version: '3.12'
     - name: Install uv
       run: pip install uv
+    - name: Export requirements.txt from pyproject.toml
+      run: uv pip compile pyproject.toml --output requirements.txt
     - name: Install dependencies with uv
-      run: uv pip install --system --no-cache-dir
+      run: uv pip install --system --no-cache-dir --require-hashes --requirements requirements.txt
     - name: Ensure browsers are installed
       run: python -m playwright install --with-deps
     - name: Run your tests
